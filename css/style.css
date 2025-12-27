@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.bgone{
+    background-color: #fafafa;
+}
+.container.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card {
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+.card-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(63, 81, 255, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img::after {
+  opacity: 1;
+}
+
+#card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:50px 0 ;
+    gap: 10px;
+}
+.card {
+  width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  font-family: Arial, sans-serif;
+  margin: 40px 0; 
+}
+
+/* IMAGE */
+.card-img {
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  display: block;
+}
+
+/* TAGS */
+.top-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.tag.blue {
+  background: #3f51ff;
+}
+
+.tag.orange {
+  background: #ff7a2f;
+}
+
+/* ENERGY ICON */
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  background: #3f51ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRICE */
+.price {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  background: #fff;
+  color: #3f51ff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* IMAGE ICONS */
+.img-actions {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.img-actions .icon {
+  width: 44px;
+  height: 44px;
+  background: #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* BODY */
+.card-body {
+  padding: 20px;
+}
+
+.location {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #000;
+  transition: .4s;
+}
+.card-body h3:hover{
+  color: #3f51ff;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  font-weight: bold;
+}
